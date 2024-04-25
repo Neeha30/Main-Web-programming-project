@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="adoptBtn.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+<body>
+  <h1>Adoption Form</h1>
+  <form id="adoptionForm">
+    <h2>Child Information</h2>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName" required><br>
+
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="lastName" required><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="0" max="17" required><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <h2>Parent Information</h2>
+    <label for="parentFirstName">First Name:</label><br>
+    <input type="text" id="parentFirstName" name="parentFirstName" required><br>
+
+    <label for="parentLastName">Last Name:</label><br>
+    <input type="text" id="parentLastName" name="parentLastName" required><br>
+
+    <label for="parentEmail">Email:</label><br>
+    <input type="email" id="parentEmail" name="parentEmail" required><br>
+
+    <label for="parentPhone">Phone Number:</label><br>
+    <input type="tel" id="parentPhone" name="parentPhone" required><br>
+
+    <label for="parentAddress">Address:</label><br>
+    <input type="text" id="parentAddress" name="parentAddress" required><br>
+
+    <label for="parentCity">City:</label><br>
+    <input type="text" id="parentCity" name="parentCity" required><br>
+
+    <label for="parentState">State:</label><br>
+    <input type="text" id="parentState" name="parentState" required><br>
+
+    <label for="parentZip">Zip Code:</label><br>
+    <input type="text" id="parentZip" name="parentZip" required><br>
+
+    <h2>Employment Information</h2>
+    <label for="jobTitle">Job Title:</label><br>
+    <input type="text" id="jobTitle" name="jobTitle" required><br>
+
+    <label for="employer">Employer:</label><br>
+    <input type="text" id="employer" name="employer" required><br>
+
+    <label for="income">Annual Income:</label><br>
+    <input type="number" id="income" name="income" min="0" step="any" required><br>
+
+    <label for="jobDescription">Job Description:</label><br>
+    <textarea id="jobDescription" name="jobDescription" required></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="adoptBtn.js"></script>
+</body>
+</html>

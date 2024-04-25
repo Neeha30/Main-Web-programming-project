@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGO Donation Form</title>
+<link rel="stylesheet" href="donation.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="l1-removebg-preview.png" alt="NGO LOGO"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="newproject.html">Home</a></li>
+   
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="donation-form">
+  <h2>Make a Donation</h2>
+  <div class="form-container">
+    <!-- Amount Selection Step -->
+    <div class="form-step" id="amountStep">
+        <h2>Choose Donation Amount</h2>
+        <div class="amount-options">
+            <div class="radio-option">
+                <input type="radio" id="amount1" name="donationAmount" value="1000">
+                <label for="amount1">Rs.1000</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="amount2" name="donationAmount" value="20000">
+                <label for="amount2">Rs.20000</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="amount3" name="donationAmount" value="50000">
+                <label for="amount3">Rs.50000</label>
+            </div>
+            <!-- Custom Amount Input -->
+            <div class="radio-option custom-amount">
+                <input type="radio" id="customAmount" name="donationAmount" value="custom">
+                <label for="customAmount">Other</label>
+                <input type="number" id="customInput" placeholder="Enter custom amount" disabled>
+            </div>
+        </div>
+        <button id="nextToDetailsBtn">Next</button>
+    </div>
+
+
+    <!-- Personal Details Step -->
+    <div class="form-step hidden" id="detailsStep">
+        <h2>Enter Personal Details</h2>
+        <div class="user-details">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="address" placeholder="Street Address">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="zip" placeholder="Zip Code">
+        </div>
+        <button id="prevToAmountBtn">Previous</button>
+        <button id="nextToPaymentBtn">Next</button>
+    </div>
+  
+    <!-- Payment Details Step -->
+    <div class="form-step hidden" id="paymentStep">
+        <h2>Enter Payment Details</h2>
+        <div class="payment-details">
+            <input type="text" id="cardNumber" placeholder="Card Number">
+            <input type="text" id="expiryDate" placeholder="Expiration Date (MM/YY)">
+            <input type="text" id="cvv" placeholder="CVV">
+        </div>
+        <button id="prevToDetailsBtn">Previous</button>
+        <button id="submitBtn">Submit Donation</button>
+    </div>
+  
+    <!-- Error Message Display -->
+    <p class="error-message"></p>
+    
+    <!-- Selected Amount Display -->
+        <!-- Display Selected Amount -->
+        <div class="selected-amount-container">
+          <p id="selectedAmountDisplay" class="selected-amount"></p>
+      </div>
+  </div>
+</div>
+</body>
+
+
+<script src="script1.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>

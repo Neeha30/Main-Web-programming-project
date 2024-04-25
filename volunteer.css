@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select {
+    height: 120px; /* Adjust height for multiple selection */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #0056b3;
+  }

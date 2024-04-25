@@ -1,0 +1,772 @@
+/* Common style start*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --themeblue: #0f57dd;
+    --gray:#efefef;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+button, 
+body{
+    font-family:"Poppins", sans-serif;
+}
+
+
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer{
+    width:100%;
+}
+.container{
+    width:1140px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width:300px;
+    border-bottom: 3px solid var(--themeblue);
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin:0 auto 50px;
+    position:relative;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+section{
+    padding:100px 0;
+    position: relative;
+}
+
+
+
+
+/*Common style end*/
+
+
+/*Home style start */
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 50px; /* Set the desired height */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure full width of container */
+    max-width: 1140px; /* Adjust as needed */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+header .logo img {
+    height: 60px; /* Adjust logo height */
+}
+
+/* Navigation Styles */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px; /* Match the height of the header */
+    padding: 0 10px; /* Adjust padding for spacing */
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeblue);
+}
+
+
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("l2.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    color: white; /* Set font color to white for main text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle text shadow for contrast */
+    position: relative; /* Establish positioning context for pseudo-element */
+}
+
+/* Semi-transparent overlay */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Place the overlay behind text */
+}
+
+.banner h1,
+.banner h2,
+.banner p,
+.banner button {
+    position: relative; /* Ensure text elements appear above the overlay */
+    z-index: 2; /* Position text elements on top of the overlay */
+}
+
+.banner h1 h2{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 20px; /* Increase spacing below h1 */
+}
+
+
+.banner p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.banner button {
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    outline: none;
+    padding: 12px 25px;
+    margin-top: 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #f0f0f0; /* Lighten background on hover */
+}
+
+
+
+/*Home style end */
+
+
+img{
+    height: 175px;
+    width: 175px;
+}
+
+
+/* AboutSection Start*/
+
+/* Styling for the About Us section cards */
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#aboutSection .cards > div {
+    width: 350px;
+    background-color: #f8f8f8; /* Light background color */
+    padding: 30px;
+    color: #444;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-bottom: 30px; /* Spacing between cards */
+}
+
+#aboutSection .cards > div:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+    cursor: pointer;
+}
+
+#aboutSection .cards > div .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#aboutSection .cards > div p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#aboutSection .cards > div button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--themeblue); /* Button background color */
+    color: #fff;
+}
+
+#aboutSection .cards > div button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+
+/*AboutSection end*/
+
+/*program section start*/
+
+.programs{ 
+    background-color: #e2e2e2;
+}
+
+.programs .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+
+.programs .boxContainer .box{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.programs  .boxContainer .box .cardImage {
+    width : 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow:hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.programs  .boxContainer .box .cardImage::after{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after{
+    background-image: url("image1.jpeg");
+
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after{
+    background-image: url("image3.jpeg");
+
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after{
+    background-image: url("image2.jpeg");
+
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after{
+    background-image: url("image4.jpeg");
+
+}
+
+
+.programs  .boxContainer .box:hover .cardImage:after {
+    top:100%;
+    transition: 0.4s;
+}
+
+
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top:15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.programs .boxContainer .box .donationCount {
+    font-size:  13px;
+    font-weight: 15px;
+    color:#444;
+    margin-top: 10px;
+}
+
+
+.programs .boxContainer .box .donationCount span{
+    color: var(--themeblue);
+}
+
+.programs .box button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--themeblue);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.programs .box button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+/*program section end*/
+
+/* education section start*/
+
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education  .videoPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.education  .sectionTitle{
+    color: #020000;
+    text-shadow: 0 0 4px #0f23a4;
+}
+
+
+.education .educationContainer{
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top:35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationContainer h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.education .educationContainer p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+.education .educationContainer button{
+    background-color: var(--themeblue);
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+
+}
+/*education section end*/
+
+/*gallery start here*/
+
+.gallery  .galleryContainer{
+    column-count: 4;
+    column-gap: 20px;
+}
+
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+
+.gallery .galleryContainer img{
+    width:100%;
+    display:block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+/*gallery end here*/
+
+/*Join Section start from here*/
+
+.join{
+    background-image : url("img30.jpeg");
+    color: #ecefec;
+}
+
+.join .joinTitle{
+    font-size:40px;
+    font-weight: 100;
+}
+
+.join .joinTitle span{
+    font-weight: 800;
+}
+
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border:0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #130c0c;
+    color: #fff;
+}
+
+
+.join button.adopBtn{
+    background-color: var(--gray);
+}
+
+/*Join Section ends from here*/
+
+/*footer start from here*/
+
+/* Footer Styles */
+footer {
+    background-color: #0f0101;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #7f7f7f;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .linksContainer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer .newsLetterContainer img {
+    height: 80px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer .container {
+        grid-template-columns: 1fr; /* Change to single column layout on smaller screens */
+    }
+}
+
+/*footer end here*/
+
+/*Responsive code start from here*/
+@media screen and (max-width:1140px){
+    .container{
+        width:100%;
+        padding:0 15px;
+    }
+
+    .education .videoPlayer{
+        width:1280px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .banner h1{
+        margin-top: 200px;
+    }
+    #aboutSection .cards{
+        justify-content: space-around;
+        height:auto;
+
+    }
+
+    #aboutSection .cards > div{
+        margin :10px 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .banner{
+        background-position: 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+
+    .programs .boxContainer{
+        grid-template-columns: (2,1fr);
+    }
+}
+
+@media screen and ( max-width: 768px)  {
+    header nav{
+        position : relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    header nav:after{
+        top: 17px;
+
+    }
+    header nav:before{
+        top:7px;
+
+    }
+
+    header nav:after,
+    header nav:before{
+        content:"";
+        height:2px;
+        width:17px;
+        background-color: #fff;
+        display:block;
+        position: absolute;
+        left:5px;
+    }
+
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top:53px;
+        transition: 0.5s;
+    }
+
+    header nav:hover ul{
+        right:0;
+    }
+
+    header nav ul li{
+        display : block;
+    }
+
+    header nav ul li a {
+        width:300px;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .banner{
+        background-position-x:65% ;
+    }
+
+    .banner p{
+        font-size:14px;
+    }
+
+    .banner p,
+    .banner h1{
+        width: 70%;
+    }
+
+    #aboutSection .cards > div:hover{
+        width: 350px;
+    }
+    .education .educationContainer{
+        width:96%;
+    }
+
+    .education .educationContainer h3{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .education .educationContainer p{
+        margin: 10px o 20px;
+    }
+
+    .gallery .galleryContainer{
+        column-count: 2;
+    }
+} 
+
+
+@media screen and(max-width:42px) {
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner button{
+        margin-bottom: 10px;
+    }
+
+    #aboutSection p{
+        text-align: justify;
+    }
+
+    #aboutSection .cards > div:hover{
+        width:400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+
+    .programs .boxContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .education .videoPlayer {
+        width:1400px;
+    }
+
+    .education .educationContainer{
+        width:93%;
+    }
+
+    .gallery .galleryContainer{
+        column-count: 1;
+    }
+
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and(max-width: 320px){
+    .education .educationContainer h3{
+        font-size:18px;
+        line-height: 24px;
+    }
+
+    .banner h1{
+        margin: top 100px;
+    }
+    
+}
+
+    
+
+/*Responsive code end from here*/

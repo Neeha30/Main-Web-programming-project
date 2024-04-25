@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  
+  .donation-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.radio-option label {
+    margin-right: 20px;
+}
+
+.custom-amount input[type="number"] {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 120px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.user-details,
+.payment-details {
+    margin-bottom: 20px;
+}
+
+.user-details input[type="text"],
+.user-details input[type="email"],
+.payment-details input[type="text"],
+.amount-options input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add your CSS styles here */
+/* You can customize the styles for selected amount display if needed */
+.selected-amount-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.selected-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for amount display */
+}
+/* Styles for buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

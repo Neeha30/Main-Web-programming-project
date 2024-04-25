@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+    <link rel="stylesheet" href="scholarship.css">
+</head>
+<header>
+    <div class="container1">
+        <div class="logo">
+            <img src="l1-removebg-preview.png" alt="NGO LOGO"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="newproject.html">Home</a></li>
+   
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <h2>Scholarship Application Form</h2>
+        <form id="scholarshipForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="university">Current University/College:</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+                <label for="major">Major/Subject:</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="gpa">GPA/Grades:</label>
+                <input type="text" id="gpa" name="gpa" required>
+            </div>
+            <div class="form-group">
+                <label for="essay">Essay/Statement of Purpose:</label>
+                <textarea id="essay" name="essay" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recommendation">Recommendation Letter (PDF):</label>
+                <input type="file" id="recommendation" name="recommendation" accept=".pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="terms">I agree to the terms and conditions:</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+        <p id="successMessage" class="hidden">Thank you for submitting your application!</p>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>
